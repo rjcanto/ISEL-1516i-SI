@@ -6,7 +6,7 @@ import java.util.concurrent.locks.*;
 public class Queue {
 
 	//Aula 28/07/2015. Não é normal usar reentrantlock com semaphore. 
-	//Exsistem outros mecanismos.
+	//Existem outros mecanismos.
 	private final Lock lock = new ReentrantLock() ; //Mutex
 	private final Semaphore sem = new Semaphore(0);
 	
